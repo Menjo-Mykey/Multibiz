@@ -4,10 +4,6 @@
   "installCommand": "npm ci",
   "env": {
     "VITE_SOURCEMAP": "false"
-  },
-  "routes": [
-    { "src": "/service-worker.js", "dest": "/service-worker.js" },
-    { "src": "/(.*)", "dest": "/index.html" }
-  ]
+  }
 }
 
