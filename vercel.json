@@ -1,0 +1,9 @@
+{
+  "buildCommand": "npm run build",
+  "framework": "vite",
+  "installCommand": "npm ci",
+  "env": {
+    "VITE_SOURCEMAP": "false"
+  }
+}
+
