@@ -4,6 +4,7 @@
   "installCommand": "npm ci",
   "env": {
     "VITE_SOURCEMAP": "false"
-  }
+  },
+  "outputDirectory": "dist"
 }
 
