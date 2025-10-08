@@ -51,11 +51,11 @@ const Index = () => {
           </div>
 
           <h1 className="text-6xl font-bold tracking-tight mb-6 bg-gradient-to-r from-primary via-triplek to-swan bg-clip-text text-transparent">
-            All-in-One POS System
+            Multibiz — Your all-in-one POS
           </h1>
 
           <p className="text-2xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed">
-            Streamline your barbershop and water distribution business with one
+            Streamline your operations across services and products with one
             powerful, integrated platform
           </p>
 

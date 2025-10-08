@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import {
   Sidebar,
   SidebarContent,
@@ -11,9 +11,9 @@ import {
   SidebarMenuItem,
   SidebarHeader,
   SidebarFooter,
-} from '@/components/ui/sidebar';
-import { useBusinessContext } from '@/contexts/BusinessContext';
-import { useAuth } from '@/contexts/AuthContext';
+} from "@/components/ui/sidebar";
+import { useBusinessContext } from "@/contexts/BusinessContext";
+import { useAuth } from "@/contexts/AuthContext";
 import {
   LayoutDashboard,
   ShoppingCart,
@@ -33,10 +33,10 @@ import {
   LogOut,
   Users2,
   AlertCircle,
-} from 'lucide-react';
-import { BusinessSelector } from './BusinessSelector';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+} from "lucide-react";
+import { BusinessSelector } from "./BusinessSelector";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
 export const AppSidebar: React.FC = () => {
   const location = useLocation();
@@ -45,97 +45,97 @@ export const AppSidebar: React.FC = () => {
 
   const mainMenuItems = [
     {
-      title: 'Dashboard',
-      url: '/dashboard',
+      title: "Dashboard",
+      url: "/dashboard",
       icon: LayoutDashboard,
     },
     {
-      title: 'POS',
-      url: '/pos',
+      title: "POS",
+      url: "/pos",
       icon: ShoppingCart,
     },
     {
-      title: 'Approvals',
-      url: '/approvals',
+      title: "Approvals",
+      url: "/approvals",
       icon: CheckSquare,
     },
     {
-      title: 'Expenses',
-      url: '/expenses',
+      title: "Expenses",
+      url: "/expenses",
       icon: DollarSign,
     },
     {
-      title: 'Reports',
-      url: '/reports',
+      title: "Reports",
+      url: "/reports",
       icon: BarChart3,
     },
     {
-      title: 'Users',
-      url: '/users',
+      title: "Users",
+      url: "/users",
       icon: Users,
     },
   ];
 
   const triplekMenuItems = [
     {
-      title: 'Services',
-      url: '/services',
+      title: "Services",
+      url: "/services",
       icon: Scissors,
     },
     {
-      title: 'Commissions',
-      url: '/commissions',
+      title: "Commissions",
+      url: "/commissions",
       icon: Calculator,
     },
     {
-      title: 'Clock In/Out',
-      url: '/clock',
+      title: "Clock In/Out",
+      url: "/clock",
       icon: Clock,
     },
   ];
 
   const swanMenuItems = [
     {
-      title: 'Inventory',
-      url: '/inventory',
+      title: "Inventory",
+      url: "/inventory",
       icon: Package,
     },
     {
-      title: 'Stock Alerts',
-      url: '/stock-alerts',
+      title: "Stock Alerts",
+      url: "/stock-alerts",
       icon: AlertCircle,
     },
     {
-      title: 'Deliveries',
-      url: '/deliveries',
+      title: "Deliveries",
+      url: "/deliveries",
       icon: Truck,
     },
     {
-      title: 'Driver Dashboard',
-      url: '/driver',
+      title: "Driver Dashboard",
+      url: "/driver",
       icon: Truck,
     },
     {
-      title: 'Customers',
-      url: '/customers',
+      title: "Customers",
+      url: "/customers",
       icon: Users2,
     },
     {
-      title: 'Suppliers',
-      url: '/suppliers',
+      title: "Suppliers",
+      url: "/suppliers",
       icon: PackageOpen,
     },
     {
-      title: 'Purchase Orders',
-      url: '/purchase-orders',
+      title: "Purchase Orders",
+      url: "/purchase-orders",
       icon: FileText,
     },
   ];
 
   const settingsMenuItems = [
     {
-      title: 'Settings',
-      url: '/settings',
+      title: "Settings",
+      url: "/settings",
       icon: Settings,
     },
   ];
@@ -150,7 +150,7 @@ export const AppSidebar: React.FC = () => {
             <Scissors className="h-5 w-5 text-triplek" />
             <Droplets className="h-5 w-5 text-swan" />
           </div>
-          <h2 className="font-bold text-lg">Multi-POS</h2>
+          <h2 className="font-bold text-lg">Multibiz</h2>
         </div>
         <BusinessSelector />
       </SidebarHeader>
@@ -162,10 +162,7 @@ export const AppSidebar: React.FC = () => {
             <SidebarMenu>
               {mainMenuItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton
-                    asChild
-                    isActive={isActive(item.url)}
-                  >
+                  <SidebarMenuButton asChild isActive={isActive(item.url)}>
                     <Link to={item.url}>
                       <item.icon className="h-4 w-4" />
                       <span>{item.title}</span>
@@ -177,7 +174,7 @@ export const AppSidebar: React.FC = () => {
           </SidebarGroupContent>
         </SidebarGroup>
 
-        {selectedBusiness?.type === 'triplek' && (
+        {selectedBusiness?.type === "triplek" && (
           <SidebarGroup>
             <SidebarGroupLabel>
               <div className="flex items-center gap-2">
@@ -189,10 +186,7 @@ export const AppSidebar: React.FC = () => {
               <SidebarMenu>
                 {triplekMenuItems.map((item) => (
                   <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton
-                      asChild
-                      isActive={isActive(item.url)}
-                    >
+                    <SidebarMenuButton asChild isActive={isActive(item.url)}>
                       <Link to={item.url}>
                         <item.icon className="h-4 w-4" />
                         <span>{item.title}</span>
@@ -205,7 +199,7 @@ export const AppSidebar: React.FC = () => {
           </SidebarGroup>
         )}
 
-        {selectedBusiness?.type === 'swan' && (
+        {selectedBusiness?.type === "swan" && (
           <SidebarGroup>
             <SidebarGroupLabel>
               <div className="flex items-center gap-2">
@@ -217,10 +211,7 @@ export const AppSidebar: React.FC = () => {
               <SidebarMenu>
                 {swanMenuItems.map((item) => (
                   <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton
-                      asChild
-                      isActive={isActive(item.url)}
-                    >
+                    <SidebarMenuButton asChild isActive={isActive(item.url)}>
                       <Link to={item.url}>
                         <item.icon className="h-4 w-4" />
                         <span>{item.title}</span>
@@ -238,10 +229,7 @@ export const AppSidebar: React.FC = () => {
             <SidebarMenu>
               {settingsMenuItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton
-                    asChild
-                    isActive={isActive(item.url)}
-                  >
+                  <SidebarMenuButton asChild isActive={isActive(item.url)}>
                     <Link to={item.url}>
                       <item.icon className="h-4 w-4" />
                       <span>{item.title}</span>
@@ -256,12 +244,10 @@ export const AppSidebar: React.FC = () => {
 
       <SidebarFooter className="p-4 border-t">
         <div className="flex flex-col gap-3">
-          <div className="text-xs text-muted-foreground">
-            {user?.email}
-          </div>
-          <Button 
-            variant="ghost" 
-            size="sm" 
+          <div className="text-xs text-muted-foreground">{user?.email}</div>
+          <Button
+            variant="ghost"
+            size="sm"
             onClick={signOut}
             className="w-full justify-start"
           >

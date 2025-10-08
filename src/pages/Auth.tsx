@@ -189,9 +189,9 @@ export const Auth: React.FC = () => {
               <span className="font-semibold">Swan</span>
             </div>
           </div>
-          <CardTitle className="text-2xl font-bold">All-in-One POS</CardTitle>
+          <CardTitle className="text-2xl font-bold">Multibiz</CardTitle>
           <CardDescription>
-            Manage your barbershop and water distribution business
+            Your all-in-one POS for every part of your business
           </CardDescription>
         </CardHeader>
         <CardContent>

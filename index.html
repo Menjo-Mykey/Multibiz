@@ -1,33 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0f172a" />
     <link rel="manifest" href="/manifest.json" />
-    <title>All-in-One POS</title>
-    <meta name="description" content="All-in-One POS system for TrippleK Barbershop and Swan Water Distribution" />
-    <meta name="author" content="Lovable" />
+    <link rel="icon" href="/placeholder.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <title>Multibiz</title>
+    <meta name="description" content="Multibiz — Your all-in-one POS" />
+    <meta name="author" content="" />
 
-    <meta property="og:title" content="all-in-one-pos" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:title" content="Multibiz" />
+    <meta property="og:description" content="Your all-in-one POS" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/service-worker.js')
-            .then(registration => console.log('SW registered:', registration))
-            .catch(error => console.log('SW registration failed:', error));
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then((registration) => console.log("SW registered:", registration))
+            .catch((error) => console.log("SW registration failed:", error));
         });
       }
     </script>

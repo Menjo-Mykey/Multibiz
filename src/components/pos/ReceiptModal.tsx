@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog';
-import { Button } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
-import { Printer, Download } from 'lucide-react';
-import { format } from 'date-fns';
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import { Printer, Download } from "lucide-react";
+import { format } from "date-fns";
 
 interface ReceiptItem {
   name: string;
@@ -64,7 +64,9 @@ export const ReceiptModal: React.FC<ReceiptModalProps> = ({
           {/* Business Header */}
           <div className="text-center">
             <h2 className="text-xl font-bold">{businessName}</h2>
-            <p className="text-sm text-muted-foreground">All-in-One POS System</p>
+            <p className="text-sm text-muted-foreground">
+              Multibiz — Your all-in-one POS
+            </p>
           </div>
 
           <Separator />
@@ -77,7 +79,7 @@ export const ReceiptModal: React.FC<ReceiptModalProps> = ({
             </div>
             <div className="flex justify-between">
               <span>Date:</span>
-              <span className="font-medium">{format(new Date(), 'PPp')}</span>
+              <span className="font-medium">{format(new Date(), "PPp")}</span>
             </div>
             {customerName && (
               <div className="flex justify-between">
@@ -139,7 +141,11 @@ export const ReceiptModal: React.FC<ReceiptModalProps> = ({
               <Printer className="h-4 w-4 mr-2" />
               Print
             </Button>
-            <Button variant="outline" className="flex-1" onClick={handleDownload}>
+            <Button
+              variant="outline"
+              className="flex-1"
+              onClick={handleDownload}
+            >
               <Download className="h-4 w-4 mr-2" />
               Download
             </Button>

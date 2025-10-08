@@ -1,36 +1,26 @@
 {
-  "name": "TrippleK & Swan POS",
-  "short_name": "TK Swan POS",
-  "description": "Point of Sale system for TrippleK Barbershop and Swan Water Delivery",
+  "name": "Multibiz",
+  "short_name": "Multibiz",
+  "description": "Multibiz — Your all-in-one POS",
   "start_url": "/",
   "display": "standalone",
   "orientation": "any",
   "theme_color": "#2563eb",
   "background_color": "#ffffff",
   "icons": [
-    { "src": "/icons/icon-72x72.png", "sizes": "72x72", "type": "image/png", "purpose": "any maskable" },
-    { "src": "/icons/icon-96x96.png", "sizes": "96x96", "type": "image/png", "purpose": "any maskable" },
-    { "src": "/icons/icon-128x128.png", "sizes": "128x128", "type": "image/png", "purpose": "any maskable" },
-    { "src": "/icons/icon-144x144.png", "sizes": "144x144", "type": "image/png", "purpose": "any maskable" },
-    { "src": "/icons/icon-152x152.png", "sizes": "152x152", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/placeholder.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" },
     { "src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
-    { "src": "/icons/icon-384x384.png", "sizes": "384x384", "type": "image/png", "purpose": "any maskable" },
     { "src": "/icons/icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ],
   "shortcuts": [
     {
-      "name": "TrippleK POS",
-      "short_name": "Barbershop",
-      "description": "Open TrippleK Barbershop POS",
-      "url": "/triplek",
-      "icons": [{ "src": "/icons/barbershop-96x96.png", "sizes": "96x96" }]
-    },
-    {
-      "name": "Swan POS",
-      "short_name": "Water Sales",
-      "description": "Open Swan Water Sales POS",
-      "url": "/swan",
-      "icons": [{ "src": "/icons/water-96x96.png", "sizes": "96x96" }]
+      "name": "POS",
+      "short_name": "POS",
+      "description": "Open Multibiz POS",
+      "url": "/pos",
+      "icons": [
+        { "src": "/placeholder.svg", "sizes": "any", "type": "image/svg+xml" }
+      ]
     },
     {
       "name": "Dashboard",

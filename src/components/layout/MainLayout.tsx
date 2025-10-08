@@ -114,7 +114,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       <Dialog open={showInstallDialog} onOpenChange={setShowInstallDialog}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Install TrippleK & Swan POS</DialogTitle>
+            <DialogTitle>Install Multibiz</DialogTitle>
             <DialogDescription>
               Access from your home screen, faster loading, and offline support.
             </DialogDescription>
