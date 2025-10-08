@@ -14,6 +14,12 @@ self.addEventListener("install", (event) => {
 self.addEventListener("fetch", (event) => {
   const req = event.request;
 
+  // Only handle http(s) requests; skip browser extensions and others
+  const url = new URL(req.url);
+  if (url.protocol !== "http:" && url.protocol !== "https:") {
+    return;
+  }
+
   // Network-first for API calls
   if (req.url.includes("/rest/") || req.url.includes("/v1/")) {
     event.respondWith(

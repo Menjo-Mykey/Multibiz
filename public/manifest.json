@@ -18,7 +18,7 @@
       "description": "Open Multibiz POS",
       "url": "/pos",
       "icons": [
-        { "src": "/placeholder.svg", "sizes": "any", "type": "image/svg+xml" }
+        { "src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png" }
       ]
     },
     {
@@ -26,14 +26,14 @@
       "short_name": "Dashboard",
       "description": "Open Manager Dashboard",
       "url": "/dashboard",
-      "icons": [{ "src": "/icons/dashboard-96x96.png", "sizes": "96x96" }]
+      "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png" }]
     },
     {
       "name": "Clock In",
       "short_name": "Clock In",
       "description": "Barber Clock In/Out",
       "url": "/clock",
-      "icons": [{ "src": "/icons/clock-96x96.png", "sizes": "96x96" }]
+      "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png" }]
     }
   ]
 }
