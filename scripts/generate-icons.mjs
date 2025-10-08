@@ -17,7 +17,7 @@ async function generatePngsFromSvg() {
   const projectRoot = path.resolve(process.cwd());
   const svgPath = path.join(projectRoot, "public", "placeholder.svg");
   const outDir = path.join(projectRoot, "public", "icons");
-  const sizes = [192, 512];
+  const sizes = [144, 192, 512];
 
   if (!fs.existsSync(svgPath)) {
     console.warn(`[icons] Source SVG not found at ${svgPath}; skipping.`);
